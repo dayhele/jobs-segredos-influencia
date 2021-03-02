@@ -4,3 +4,62 @@
   margin: 0;
 }
 
+.hero {
+  background-image: url("/assets/img/pink-bg.png");
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    justify-content: center;
+    display: flex;
+
+    .deco__one {
+      position: absolute;
+      left: 0;
+      padding: 42px 298px;
+      width: 47%;
+    }
+
+    .logo__img {
+      padding: 42px 0;
+      width: 242px;
+    }
+  }
+
+  .hero__content {
+    padding: 82px 0;
+    .carousel {
+      display: flex;
+      justify-content: center;
+
+      .item {
+        transform: rotate(-4deg);
+        display: flex;
+        justify-content: center;
+
+        .balloon {
+            position: absolute;
+            z-index: 1;
+            right: 0;
+            
+        }
+
+        .img__carousel {
+          width: 70%;
+        }
+
+        .text__carousel {
+          font-family: "Anton", sans-serif;
+          color: #fff;
+          position: absolute;
+          top: 98px;
+          text-align: center;
+          text-transform: uppercase;
+          font-size: 42px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
