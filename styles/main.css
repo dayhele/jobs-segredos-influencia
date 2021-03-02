@@ -3,6 +3,7 @@
           box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 .hero {
@@ -17,7 +18,7 @@
           flex-direction: column;
 }
 
-.hero .header {
+.hero .hero__header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -26,14 +27,14 @@
   display: flex;
 }
 
-.hero .header .deco__one {
+.hero .hero__header .deco__one {
   position: absolute;
   left: 0;
-  padding: 42px 298px;
-  width: 47%;
+  margin: 42px 0 0 232px;
+  width: 32px;
 }
 
-.hero .header .logo__img {
+.hero .hero__header .logo__img {
   padding: 42px 0;
   width: 242px;
 }
@@ -79,7 +80,47 @@
   top: 132px;
   text-align: center;
   text-transform: uppercase;
-  font-size: 42px;
+  font-size: 52px;
   font-weight: 300;
+}
+
+.hero__bottom {
+  padding: 32px 0 12px;
+}
+
+.hero__bottom .deco__two {
+  margin: 0 232px 0;
+  position: absolute;
+  right: 0;
+  bottom: -220px;
+  width: 32px;
+}
+
+.hero__bottom .button__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-family: "Anton", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.hero__bottom .arrow__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero__bottom .arrow__button .arrow__img {
+  width: 32px;
 }
 /*# sourceMappingURL=main.css.map */

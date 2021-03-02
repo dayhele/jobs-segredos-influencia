@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 .hero {
@@ -10,15 +11,15 @@
   display: flex;
   flex-direction: column;
 
-  .header {
+  .hero__header {
     justify-content: center;
     display: flex;
 
     .deco__one {
       position: absolute;
       left: 0;
-      padding: 42px 298px;
-      width: 47%;
+      margin: 42px 0 0 232px;
+      width: 32px;
     }
 
     .logo__img {
@@ -39,10 +40,9 @@
         justify-content: center;
 
         .balloon {
-            position: absolute;
-            z-index: 1;
-            right: 0;
-            
+          position: absolute;
+          z-index: 1;
+          right: 0;
         }
 
         .img__carousel {
@@ -56,10 +56,43 @@
           top: 132px;
           text-align: center;
           text-transform: uppercase;
-          font-size: 42px;
+          font-size: 52px;
           font-weight: 300;
         }
       }
     }
+  }
+}
+
+.hero__bottom {
+
+  padding: 32px 0 12px;
+
+  .deco__two {
+    margin: 0 232px 0;
+    position: absolute;
+    right: 0;
+    bottom: -220px;
+    width: 32px;
+  }
+
+  .button__content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "Anton", sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 28px;
+    text-decoration: none;
+  }
+  .arrow__button{
+    display: flex;
+    justify-content: center;
+
+    .arrow__img {
+      width: 32px;
+    }
+    
   }
 }
