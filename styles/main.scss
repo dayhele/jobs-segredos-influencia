@@ -46,7 +46,7 @@
         }
 
         .img__carousel {
-          width: 695px;
+          width: 682px;
         }
 
         .text__carousel {
@@ -94,5 +94,23 @@
       width: 32px;
     }
     
+  }
+}
+
+.main {
+  background: #fff;
+
+  .main__title {
+    font-family: "Anton", sans-serif;
+    color: #5C12AA;
+    font-size: 28px;
+    padding: 42px 292px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .main__get-to-know {
+    text-align: center;
+    color: #5C12AA;
   }
 }

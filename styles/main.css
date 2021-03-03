@@ -70,7 +70,7 @@
 }
 
 .hero .hero__content .carousel .item .img__carousel {
-  width: 695px;
+  width: 682px;
 }
 
 .hero .hero__content .carousel .item .text__carousel {
@@ -122,5 +122,23 @@
 
 .hero__bottom .arrow__button .arrow__img {
   width: 32px;
+}
+
+.main {
+  background: #fff;
+}
+
+.main .main__title {
+  font-family: "Anton", sans-serif;
+  color: #5C12AA;
+  font-size: 28px;
+  padding: 42px 292px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.main .main__get-to-know {
+  text-align: center;
+  color: #5C12AA;
 }
 /*# sourceMappingURL=main.css.map */
