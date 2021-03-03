@@ -65,7 +65,6 @@
 }
 
 .hero__bottom {
-
   padding: 32px 0 12px;
 
   .deco__two {
@@ -86,14 +85,13 @@
     font-size: 28px;
     text-decoration: none;
   }
-  .arrow__button{
+  .arrow__button {
     display: flex;
     justify-content: center;
 
     .arrow__img {
       width: 32px;
     }
-    
   }
 }
 
@@ -102,15 +100,95 @@
 
   .main__title {
     font-family: "Anton", sans-serif;
-    color: #5C12AA;
+    color: #5c12aa;
     font-size: 28px;
-    padding: 42px 292px;
+    padding: 52px 292px 0;
     text-transform: uppercase;
     text-align: center;
   }
 
   .main__get-to-know {
     text-align: center;
-    color: #5C12AA;
+    color: #5c12aa;
+    font-family: "acumin-pro", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    font-style: normal;
+    padding: 42px 0;
+  }
+
+  .main__row-1 {
+    background-color: #fff;
+    background-image: url("/assets/img/acqua-deco.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+    .influencers__content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .influencer__img {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .influencer__infos {
+      background-color: #fff;
+      box-shadow: 0px 6px 12px;
+      width: 252px;
+      justify-content: center;
+      flex-direction: column;
+      display: flex;
+      border-radius: 20px;
+      padding: 72px 0 24px 0;
+    }
+
+    .influencer__card {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      
+
+    }
+
+    .category {
+      background-color: #5fd3e8;
+      border-radius: 12px;
+      font-size: 8px;
+      color: #fff;
+      padding: 4px 12px;
+      font-family: "acumin-pro", sans-serif;
+      font-weight: 300;
+      margin-top: 12px;
+      width: 82px;
+    }
+
+    .influencer__name {
+      padding: 12px 0 0;
+      color: #5c12aa;
+      font-family: acumin-pro-extra-condensed, sans-serif;
+      font-weight: 800;
+      font-size: 32px;
+      letter-spacing: -1px;
+    }
+
+    .influencer__user {
+      font-family: "acumin-pro", sans-serif;
+      font-weight: 300;
+      color: #5c12aa;
+      font-size: 18px;
+    }
+
+    .influencer__followers {
+      color: #ff4a5a;
+      font-family: acumin-pro, sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      letter-spacing: -1px;
+    }
   }
 }
