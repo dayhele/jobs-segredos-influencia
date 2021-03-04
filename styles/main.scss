@@ -129,6 +129,10 @@
     .influencers__content {
       display: flex;
       flex-direction: column;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        transform: scale(1.05);
+      }
     }
 
     .influencer__img {
@@ -168,7 +172,6 @@
     }
 
     .influencer__name {
-      padding: 12px 0 0;
       color: #5c12aa;
       font-family: acumin-pro-extra-condensed, sans-serif;
       font-weight: 800;
@@ -192,3 +195,83 @@
     }
   }
 }
+
+.main__row-2 {
+  background-color: #fff;
+  margin-top: 132px;
+  background-image: url("/assets/img/pink-deco.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  .influencers__content {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s ease-in-out;
+      &:hover {
+        transform: scale(1.05);
+      }
+  }
+
+  .influencer__img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+  }
+
+  .influencer__infos {
+    background-color: #fff;
+    box-shadow: 0px 6px 12px;
+    width: 252px;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    border-radius: 20px;
+    padding: 92px 0 24px 0;
+    position: absolute;
+    bottom: -98px;
+  }
+
+  .influencer__card {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .influencer__category {
+    background: #5fd3e8;
+    margin: 0 68px;
+    color: #fff;
+    border-radius: 22px;
+    font-family: "acumin-pro", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+  }
+
+  .influencer__name {
+    color: #5c12aa;
+    font-family: acumin-pro-extra-condensed, sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    letter-spacing: -1px;
+  }
+
+  .influencer__user {
+    font-family: "acumin-pro", sans-serif;
+    font-weight: 300;
+    color: #5c12aa;
+    font-size: 18px;
+  }
+
+  .influencer__followers {
+    color: #ff4a5a;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: -1px;
+  }
+}
+
