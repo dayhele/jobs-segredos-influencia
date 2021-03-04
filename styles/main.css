@@ -158,6 +158,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 .main .main__row-1 .influencers__content {
@@ -181,6 +182,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 2;
 }
 
 .main .main__row-1 .influencer__infos {
@@ -199,7 +201,9 @@
   display: -ms-flexbox;
   display: flex;
   border-radius: 20px;
-  padding: 72px 0 24px 0;
+  padding: 92px 0 24px 0;
+  position: absolute;
+  bottom: -98px;
 }
 
 .main .main__row-1 .influencer__card {
@@ -212,16 +216,14 @@
           justify-content: center;
 }
 
-.main .main__row-1 .category {
-  background-color: #5fd3e8;
-  border-radius: 12px;
-  font-size: 8px;
+.main .main__row-1 .influencer__category {
+  background: #5fd3e8;
+  margin: 0 68px;
   color: #fff;
-  padding: 4px 12px;
+  border-radius: 22px;
   font-family: "acumin-pro", sans-serif;
   font-weight: 300;
-  margin-top: 12px;
-  width: 82px;
+  font-size: 12px;
 }
 
 .main .main__row-1 .influencer__name {
