@@ -70,7 +70,7 @@
 }
 
 .hero .hero__content .carousel .item .img__carousel {
-  width: 682px;
+  width: 628px;
 }
 
 .hero .hero__content .carousel .item .text__carousel {
@@ -80,7 +80,7 @@
   top: 132px;
   text-align: center;
   text-transform: uppercase;
-  font-size: 52px;
+  font-size: 42px;
   font-weight: 300;
 }
 
@@ -364,5 +364,37 @@
   font-weight: 700;
   font-size: 20px;
   letter-spacing: -1px;
+}
+
+.footer {
+  background-image: url("/assets/img/blue-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 108px;
+}
+
+.footer .footer__title {
+  color: #5c12aa;
+  font-family: acumin-pro-extra-condensed, sans-serif;
+  font-weight: 800;
+  font-size: 42px;
+  letter-spacing: -1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 132px 0 22px;
+}
+
+.footer .footer__subtitle {
+  text-align: center;
+  color: #fff;
+  font-family: "acumin-pro", sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  font-style: normal;
+  padding: 0 0 32px;
 }
 /*# sourceMappingURL=main.css.map */
