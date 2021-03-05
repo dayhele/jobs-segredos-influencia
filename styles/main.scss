@@ -31,13 +31,23 @@
 }
 
 @keyframes animated-bounce {
-  0%, 20%, 50%, 80%, 100% {transform: translateY(0)}
-  40% {transform: translateY(-8px)}
-  60% {transform: translateY(-10px)}
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-8px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
 }
 
 .hero {
-  background-image: url("/assets/img/pink-bg-v2.png");
+  background-image: url("/assets/img/pink-bg-desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -50,7 +60,7 @@
 
     .logo__img {
       padding: 42px 0;
-      width: 224px;
+      width: 220px;
     }
   }
 
@@ -148,10 +158,6 @@
     .influencers__content {
       display: flex;
       flex-direction: column;
-      transition: all 0.2s ease-in-out;
-      &:hover {
-        transform: scale(1.05);
-      }
     }
 
     .influencer__img {
@@ -236,10 +242,6 @@
   .influencers__content {
     display: flex;
     flex-direction: column;
-    transition: all 0.2s ease-in-out;
-    &:hover {
-      transform: scale(1.05);
-    }
   }
 
   .influencer__img {
@@ -253,8 +255,6 @@
       padding: 0 0 14px;
     }
   }
-
-  
 
   .influencer__infos {
     background-color: #fff;
@@ -308,14 +308,10 @@
     font-size: 20px;
     letter-spacing: -1px;
   }
-
-  
 }
 
-
-
 .footer {
-  background-image: url("/assets/img/blue-background.png");
+  background-image: url("/assets/img/blue-background-desktop.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -330,6 +326,7 @@
     display: flex;
     justify-content: center;
     padding: 132px 0 22px;
+    text-align: center;
   }
 
   .footer__subtitle {
@@ -371,6 +368,7 @@
       .form__submit {
         display: flex;
         justify-content: center;
+
         .button__submit {
           margin: 22px 0 72px;
           background-color: #ff5ae1;
@@ -415,6 +413,53 @@
       &:hover {
         color: #00f0cd;
         transition: 0.3s;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    background-image: url("/assets/img/pink-bg-mobile.png");
+  }
+
+  .img__carousel {
+    width: 50%;
+  }
+
+  .main__title {
+    padding: 52px 22px 0 !important;
+  }
+
+  .main__row-1,
+  .main__row-2 {
+    flex-direction: column;
+    background-image: none !important;
+  }
+
+  .main__row-2 {
+    margin-top: 68px;
+  }
+
+  .influencer__card {
+    position: relative;
+    margin-top: 26px;
+  }
+
+  .influencers__content {
+    margin: 42px;
+    align-self: center;
+  }
+
+  .form__fields {
+    width: 75% !important;
+  }
+
+  @media (min-width: 900px) {
+    .influencers__content {
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        transform: scale(1.05);
       }
     }
   }
