@@ -457,7 +457,7 @@
 
   @media (min-width: 900px) {
     .influencers__content {
-      transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out !important;
       &:hover {
         transform: scale(1.05);
       }

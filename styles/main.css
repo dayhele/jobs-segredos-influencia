@@ -622,8 +622,8 @@
 
 @media (max-width: 900px) and (min-width: 900px) {
   .influencers__content {
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out !important;
+    transition: all 0.2s ease-in-out !important;
   }
   .influencers__content:hover {
     -webkit-transform: scale(1.05);
