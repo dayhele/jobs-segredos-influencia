@@ -248,6 +248,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.main .main__row-1 .influencers__content:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .main .main__row-1 .influencer__img {
@@ -361,6 +368,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.main__row-2 .influencers__content:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .main__row-2 .influencer__img {
@@ -617,17 +631,6 @@
   }
   .form__fields {
     width: 75% !important;
-  }
-}
-
-@media (max-width: 900px) and (min-width: 900px) {
-  .influencers__content {
-    -webkit-transition: all 0.2s ease-in-out !important;
-    transition: all 0.2s ease-in-out !important;
-  }
-  .influencers__content:hover {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
   }
 }
 /*# sourceMappingURL=main.css.map */
