@@ -6,9 +6,93 @@
   scroll-behavior: smooth;
 }
 
+* ::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #5c12aa;
+  font-family: "acumin-pro", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 1;
+}
+
+* :-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #5c12aa;
+  font-family: "acumin-pro", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 1;
+}
+
+* ::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #5c12aa;
+  font-family: "acumin-pro", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 1;
+}
+
+* ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #5c12aa;
+  font-family: "acumin-pro", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 1;
+}
+
+* :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #5c12aa;
+}
+
+* ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #5c12aa;
+}
+
+* textarea:focus,
+* input:focus,
+* select:focus {
+  outline: 0;
+}
+
+@-webkit-keyframes animated-bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+  }
+  60% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+
+@keyframes animated-bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+  }
+  60% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+
 .hero {
-  background-image: url("/assets/img/pink-bg.png");
+  background-image: url("/assets/img/pink-bg-v2.png");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,16 +111,9 @@
   display: flex;
 }
 
-.hero .hero__header .deco__one {
-  position: absolute;
-  left: 0;
-  margin: 42px 0 0 232px;
-  width: 32px;
-}
-
 .hero .hero__header .logo__img {
   padding: 42px 0;
-  width: 242px;
+  width: 224px;
 }
 
 .hero .hero__content {
@@ -88,14 +165,6 @@
   padding: 32px 0 12px;
 }
 
-.hero__bottom .deco__two {
-  margin: 0 232px 0;
-  position: absolute;
-  right: 0;
-  bottom: -220px;
-  width: 32px;
-}
-
 .hero__bottom .button__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,6 +187,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-animation: animated-bounce 2s infinite ease;
+          animation: animated-bounce 2s infinite ease;
 }
 
 .hero__bottom .arrow__button .arrow__img {
@@ -190,12 +261,21 @@
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 2;
+  max-width: 300px !important;
+}
+
+.main .main__row-1 .influencer__img .img__resize__bottom {
+  padding: 0 0 14px;
+}
+
+.main .main__row-1 .influencer__img .img__resize__top {
+  padding: 14px 0 0;
 }
 
 .main .main__row-1 .influencer__infos {
   background-color: #fff;
-  -webkit-box-shadow: 0px 6px 12px;
-          box-shadow: 0px 6px 12px;
+  -webkit-box-shadow: 0px 2px 15px -2px rgba(41, 41, 41, 0.99);
+          box-shadow: 0px 2px 15px -2px rgba(41, 41, 41, 0.99);
   width: 252px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -225,12 +305,13 @@
 
 .main .main__row-1 .influencer__category {
   background: #5fd3e8;
-  margin: 0 68px;
+  margin: 0 52px;
   color: #fff;
-  border-radius: 22px;
+  border-radius: 24px;
   font-family: "acumin-pro", sans-serif;
   font-weight: 300;
   font-size: 12px;
+  padding: 4px;
 }
 
 .main .main__row-1 .influencer__name {
@@ -300,12 +381,17 @@
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 2;
+  max-width: 300px !important;
+}
+
+.main__row-2 .influencer__img .img__resize__bottom {
+  padding: 0 0 14px;
 }
 
 .main__row-2 .influencer__infos {
   background-color: #fff;
-  -webkit-box-shadow: 0px 6px 12px;
-          box-shadow: 0px 6px 12px;
+  -webkit-box-shadow: 0px 2px 15px -2px rgba(41, 41, 41, 0.99);
+          box-shadow: 0px 2px 15px -2px rgba(41, 41, 41, 0.99);
   width: 252px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -335,12 +421,13 @@
 
 .main__row-2 .influencer__category {
   background: #5fd3e8;
-  margin: 0 68px;
+  margin: 0 52px;
   color: #fff;
-  border-radius: 22px;
+  border-radius: 24px;
   font-family: "acumin-pro", sans-serif;
   font-weight: 300;
   font-size: 12px;
+  padding: 4px;
 }
 
 .main__row-2 .influencer__name {
@@ -369,6 +456,7 @@
 .footer {
   background-image: url("/assets/img/blue-background.png");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   margin-top: 108px;
 }
@@ -396,5 +484,108 @@
   font-weight: 300;
   font-style: normal;
   padding: 0 0 32px;
+}
+
+.footer .form__cadastro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .form__cadastro .form__fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+}
+
+.footer .form__cadastro .form__fields .form__label {
+  color: #5c12aa;
+  font-family: "acumin-pro", sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.footer .form__cadastro .form__fields .form__input {
+  background-color: #fff;
+  border-radius: 22px;
+  height: 42px;
+  text-indent: 22px;
+  margin: 8px 0;
+  border: solid 1px #ff5ae1;
+}
+
+.footer .form__cadastro .form__fields .form__submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .form__cadastro .form__fields .form__submit .button__submit {
+  margin: 22px 0 72px;
+  background-color: #ff5ae1;
+  border-radius: 32px;
+  height: 52px;
+  color: #fff;
+  font-family: "acumin-pro", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  border: none;
+  min-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .form__cadastro .form__fields .form__submit .button__submit:hover {
+  background-color: #d84ebf;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer .footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #5c12aa;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 22px;
+  color: #fff;
+  font-family: "acumin-pro", sans-serif;
+  font-size: 14px;
+}
+
+.footer .footer__container .jobspace__link {
+  color: #fff;
+  font-family: "acumin-pro", sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer .footer__container .jobspace__link:hover {
+  color: #00f0cd;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 /*# sourceMappingURL=main.css.map */
