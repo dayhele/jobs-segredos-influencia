@@ -598,6 +598,10 @@
   transition: 0.3s;
 }
 
+.footer__infos__mob {
+  display: none;
+}
+
 @media (max-width: 900px) {
   .hero {
     background-image: url("/assets/img/pink-bg-mobile.png");
@@ -631,6 +635,13 @@
   }
   .form__fields {
     width: 75% !important;
+  }
+  .footer__infos__mob {
+    display: block;
+    text-align: center;
+  }
+  .footer__infos__desk {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */
