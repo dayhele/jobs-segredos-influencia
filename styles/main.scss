@@ -68,7 +68,12 @@
     padding: 22px 0;
     .carousel {
       display: flex;
-      justify-content: center;
+      justify-content: center !important;
+
+      .glide__slide {
+        display: flex;
+        justify-content: center;
+      }
 
       .item {
         transform: rotate(-4deg);
@@ -99,6 +104,7 @@
     }
   }
 }
+
 
 .hero__bottom {
   padding: 32px 0 12px;
@@ -150,6 +156,8 @@
     background-color: #fff;
     background-image: url("/assets/img/acqua-deco.svg");
     background-repeat: no-repeat;
+    background-position: center;
+    overflow: visible;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -242,6 +250,8 @@
   display: flex;
   justify-content: center;
   position: relative;
+  background-size: cover;
+  overflow: visible;
 
   .influencers__content {
     display: flex;
@@ -387,7 +397,7 @@
           font-size: 18px;
           font-weight: 300;
           border: none;
-          min-width: 300px;
+          min-width: 250px;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -470,13 +480,18 @@
   .footer__infos__mob {
     display: block;
     text-align: center;
+    font-size: 12px;
   }
 
   .footer__infos__desk {
     display: none;
   }
 
-  @media (min-width: 900px) {
-    
+  .jobspace__link {
+    font-size: 12px;
+  }
+
+  .img__slide {
+    max-width:300px;
   }
 }
