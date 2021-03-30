@@ -235,11 +235,14 @@
   padding: 42px 0;
 }
 
+.main .main__content {
+  background-image: url("/assets/img/bg-deco.png");
+  background-size: cover;
+  background-position: center center;
+}
+
 .main .main__row-1 {
-  background-color: #fff;
-  background-image: url("/assets/img/acqua-deco.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: transparent;
   overflow: visible;
   background-size: cover;
   display: -webkit-box;
@@ -357,11 +360,8 @@
 }
 
 .main__row-2 {
-  background-color: #fff;
+  background-color: transparent;
   margin-top: 132px;
-  background-image: url("/assets/img/pink-deco.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
